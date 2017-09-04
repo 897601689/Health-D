@@ -4,50 +4,275 @@
     android:layout_height="match_parent"
     android:layout_marginTop="5dp"
     android:background="#00000000"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <ImageView
+        <!-- 呼吸 体温 -->
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/k2" />
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+            <!-- 呼吸 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/k2"
+                android:orientation="vertical"
+                android:padding="20dp">
 
-        <ImageView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="呼吸(bpm)"
+                    android:textColor="#FFFF00"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/main_txt_limit"
+                            android:text="100"
+                            android:textColor="#FFFF00" />
+
+                        <TextView
+                            style="@style/main_txt_limit"
+                            android:text="60"
+                            android:textColor="#FFFF00" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/main_txt_value"
+                        android:text="--"
+                        android:textColor="#FFFF00"
+                        android:textSize="70sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!-- 体温 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/k2"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="体/额温(℃)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/main_txt_limit"
+                            android:text="38"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            style="@style/main_txt_limit"
+                            android:text="36"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/main_txt_value"
+                        android:ems="1"
+                        android:text="--"
+                        android:textColor="#FFFFFF"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        style="@style/main_txt_value"
+                        android:ems="1"
+                        android:text="--"
+                        android:textColor="#FFFFFF"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        style="@style/main_txt_value"
+                        android:ems="1"
+                        android:text="--"
+                        android:textColor="#FFFFFF"
+                        android:textSize="40sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 呼吸 体温 -->
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:adjustViewBounds="true"
-            android:src="@drawable/k2" />
+            android:orientation="vertical">
+            <!-- 呼吸 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/k2"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="呼吸(bpm)"
+                    android:textColor="#FFFF00"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_resp_high"
+                            style="@style/main_txt_limit"
+                            android:text="100"
+                            android:textColor="#FFFF00" />
+
+                        <TextView
+                            android:id="@+id/txt_resp_low"
+                            style="@style/main_txt_limit"
+                            android:text="60"
+                            android:textColor="#FFFF00" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_resp"
+                        style="@style/main_txt_value"
+                        android:text="--"
+                        android:textColor="#FFFF00"
+                        android:textSize="70sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!-- 体温 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/k2"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="体/额温(℃)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_temp_high"
+                            style="@style/main_txt_limit"
+                            android:text="38"
+                            android:textColor="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/txt_temp_low"
+                            style="@style/main_txt_limit"
+                            android:text="36"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_temp1"
+                        style="@style/main_txt_value"
+                        android:ems="1"
+                        android:text="--"
+                        android:textColor="#FFFFFF"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/txt_temp2"
+                        style="@style/main_txt_value"
+                        android:ems="1"
+                        android:text="--"
+                        android:textColor="#FFFFFF"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/txt_temp3"
+                        style="@style/main_txt_value"
+                        android:ems="1"
+                        android:text="--"
+                        android:textColor="#FFFFFF"
+                        android:textSize="40sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/k2" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:adjustViewBounds="true"
-            android:src="@drawable/k2" />
-
-    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+
         <ImageView
             android:id="@+id/m_um"
             android:layout_width="wrap_content"
@@ -55,13 +280,14 @@
             android:layout_marginTop="10dp"
             android:adjustViewBounds="true"
             android:src="@drawable/k6" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/back_left"
-            android:layout_margin="15dp"
             android:layout_alignBottom="@+id/m_um"
-            android:layout_alignEnd="@+id/m_um"/>
+            android:layout_alignEnd="@+id/m_um"
+            android:layout_margin="15dp"
+            android:background="@drawable/back_left" />
 
     </RelativeLayout>
 
