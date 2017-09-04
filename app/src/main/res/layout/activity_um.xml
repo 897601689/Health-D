@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/m_bg">
+
+    <RelativeLayout
+        android:id="@+id/um_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/um_back"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/back_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="尿常规检测"
+            android:textColor="@color/White"
+            android:textSize="40sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/um_title_layout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/um_btn_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bp_info_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bp_stop_btn"
+                style="@style/button_small"
+                android:layout_marginLeft="35dp"
+                android:text="启 / 停" />
+
+            <TextView
+                android:id="@+id/bp_reset_btn"
+                style="@style/button_small"
+                android:layout_marginLeft="35dp"
+                android:text="复　位" />
+
+            <TextView
+                android:id="@+id/bp_leak_btn"
+                style="@style/button_small"
+                android:layout_marginLeft="35dp"
+                android:text="漏气检测" />
+
+            <TextView
+                android:id="@+id/bp_save_btn"
+                style="@style/button_small"
+                android:layout_marginLeft="35dp"
+                android:text="保存数据" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bp_mid_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/um_btn_layout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/um_style"
+                android:background="@drawable/bp_bg_gray">
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="白细胞\nLEU" />
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="——" />
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="参考值" />
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="6.5x10^25" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/um_style"
+                android:background="@drawable/bp_bg_white">
+
+                <TextView
+                    style="@style/um_text"
+                    android:layout_weight="0.9"
+                    android:text="亚硝酸盐\nNIT" />
+                <TextView
+                    style="@style/um_text"
+                    android:text="——" />
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="参考值" />
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="6.5x10^25" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/um_style"
+                android:background="@drawable/bp_bg_gray">
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="尿胆原\nUBG" />
+                <TextView
+                    style="@style/um_text"
+                    android:text="——" />
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="参考值" />
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="6.5x10^25" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/um_style"
+                android:background="@drawable/bp_bg_white">
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="蛋白质\nPRO" />
+                <TextView
+                    style="@style/um_text"
+                    android:text="——" />
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="参考值" />
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="6.5x10^25" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/um_style"
+                android:background="@drawable/bp_bg_gray">
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="PH   值\nPH" />
+                <TextView
+                    style="@style/um_text"
+                    android:text="——" />
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="参考值" />
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="6.5x10^25" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/um_style"
+                android:background="@drawable/bp_bg_white">
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="比    重\nSG" />
+                <TextView
+                    style="@style/um_text"
+                    android:text="——" />
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="参考值" />
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="6.5x10^25" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/um_style"
+                android:background="@drawable/bp_bg_gray">
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="潜    血\nBLD" />
+                <TextView
+                    style="@style/um_text"
+                    android:text="——" />
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="参考值" />
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="6.5x10^25" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/um_style"
+                android:background="@drawable/bp_bg_white">
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="酮    体\nKET" />
+                <TextView
+                    style="@style/um_text"
+                    android:text="——" />
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="参考值" />
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="6.5x10^25" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/um_style"
+                android:background="@drawable/bp_bg_white">
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="胆红素\nBIL" />
+                <TextView
+                    style="@style/um_text"
+                    android:text="——" />
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="参考值" />
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="6.5x10^25" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/um_style"
+                android:background="@drawable/bp_bg_gray">
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="葡萄糖\nGLU" />
+                <TextView
+                    style="@style/um_text"
+                    android:text="——" />
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="参考值" />
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="6.5x10^25" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/um_style"
+                android:background="@drawable/bp_bg_white">
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="维生素\nVC" />
+                <TextView
+                    style="@style/um_text"
+                    android:text="——" />
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="参考值" />
+
+                <TextView
+                    style="@style/um_text"
+                    android:text="6.5x10^25" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

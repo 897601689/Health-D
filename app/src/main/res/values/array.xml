@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="BP">
+        <item >成年</item>
+        <item >儿童</item>
+        <item >婴幼儿</item>
+    </string-array>
+    <string-array name="Query">
+        <item >全部</item>
+        <item >血糖检测</item>
+        <item >尿常规检测</item>
+        <item >心电/心率</item>
+        <item >血氧检测</item>
+        <item >体温检测</item>
+        <item >血压检测</item>
+    </string-array>
+</resources>
